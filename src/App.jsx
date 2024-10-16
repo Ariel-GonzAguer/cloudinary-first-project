@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+9import React, { useEffect, useState } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import { generativeReplace } from "@cloudinary/url-gen/actions/effect";
@@ -41,6 +41,9 @@ function App() {
             console.error("Error loading image:", e);
           }}
           // pendiente agregar algo mientras se carga la imagen
+{ imagenSubida && !imageLoaded && (
+<p>Cargando...</p>
+}
         />
       )}
     </div>
