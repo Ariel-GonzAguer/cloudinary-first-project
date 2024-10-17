@@ -10,6 +10,7 @@ export default function UploadWidget({onUpload}) {
       {
         cloudName: "arielcloudinary",
         uploadPreset: "unsignedOctober",
+sources: ['local', 'camera'] // Agregar 'camera' aquí
       },
       function (error, result) {
         if (error) {
