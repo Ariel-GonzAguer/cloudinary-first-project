@@ -17,7 +17,7 @@ export default function UploadWidget({onUpload}) {
           onUpload({ success: false, error });
           return;
         } else if (result.event === "success") {
-          console.log("¡Subida exitosa!", result.info.public_id);
+          console.log("¡Subida exitosa a Cloudinary!", result.info);
           onUpload({ success: true, info: result.info });
         }
       }
