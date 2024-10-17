@@ -1,4 +1,4 @@
-9import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { scale } from "@cloudinary/url-gen/actions/resize";
 import { AdvancedImage } from "@cloudinary/react";
