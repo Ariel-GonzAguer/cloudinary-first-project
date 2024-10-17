@@ -9,8 +9,7 @@ export default function UploadWidget({onUpload}) {
     widgetRef.current = cloudinaryRef.current.createUploadWidget(
       {
         cloudName: "arielcloudinary",
-        uploadPreset: "unsignedOctober",
-sources: ['local', 'camera'] // Agregar 'camera' aquí
+        uploadPreset: "unsignedOctober"
       },
       function (error, result) {
         if (error) {
